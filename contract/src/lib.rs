@@ -22,7 +22,7 @@ impl Welcome {
         match self.records.get(&account_id) {
             None => {
                 env::log(b"Using default message.");
-                return Some(format!("Hello {}", account_id));
+                return Some(format!("Hi {}", account_id));
             },
             _ => return Some(format!("{} {}", self.records.get(&account_id).unwrap(), account_id))
         }
