@@ -6,3 +6,7 @@ ports:
     onOpen: open-browser
 image:
   file: .gitpod.Dockerfile
+github:
+  prebuilds:
+    addCheck: true
+    addComment: true
