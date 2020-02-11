@@ -1,5 +1,5 @@
 tasks:
-  - init: yarn
+  - init: yarn && yarn build:contract
     command: yarn dev
 ports:
   - port: 1234
